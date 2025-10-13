@@ -90,6 +90,7 @@ var siteConfig = {
   ],
   "messages": {},
   "occurrenceSearch": {
+    "scope": {
       "type": "and",
       "predicates": [
         {
