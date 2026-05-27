@@ -1,5 +1,76 @@
+$primary-color: #006ba6;
+$secondary-color: #c2bcbc;
+$button-color: #6b6767;
+
 // $navbar-dropdown-arrow: #f00;
 @import "theme/_main";
 
-// You can add additional styling here
-@import "_example"; // either as inline css or as a separate file as in this case
+// navbar styles
+.navbar {
+    background: none;
+    position: sticky;
+    top: 0;
+    margin: auto;
+    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(54,199,152,0.9) 0%, rgba(0,12,100,0.9) 100%);
+}
+
+// statistics styles
+    .statistics {
+      overflow: visible;
+      background: $secondary-color;
+
+      .feature-title {
+        font-size: 3.0rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        color: #ffffff;
+
+      }
+      .feature-description {
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: #ffffff;
+      }
+    }
+
+// Footer styles
+.footer {
+    background-color: $secondary-color;
+
+    .footer-column-name{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .footer-description{
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: #ffffff;
+    }
+
+}
+
+// Floating Hero styles
+.floatingHero {
+    .feature-title {
+        font-size: 2.2rem;
+    }
+    .feature-description {
+        color: #ffffff;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+// Buttons styles
+.button {
+    background-color: $button-color;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}

@@ -10,10 +10,10 @@ height: 70vh
 permalink: /
 composition:
   - type: heroImage
-  - data: home.stats
-    type: stats
   - data: home.buttons
     type: floatingText
+  - data: home.stats
+    type: stats
   - data: home.welcome
     type: split
 ---

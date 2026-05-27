@@ -2,29 +2,33 @@
 # You should create one of these files for each language you support. E.g. /_data/es/navigation.yml for the spanish version of the menu
 # Links listed below will be included in your site's navbar (navigation at the top)
 
-- text: Data
-  menu: 
+- text: Consultar
+  menu: # Dropdown menu (one level deep only)
   - text: Occurrences
     href: /occurrence/search
-  - text: Datasets
+  - text: Conjuntos de datos
     href: /dataset/search
-  - text: Collections
-    href: /collection/search
-  - text: Literature
+  - text: Literatura
     href: /literature/search
-- text: Links
+- text: Recursos
   menu: # Dropdown menu (one level deep only)
-  - text: Base theme demo
-    href: https://hp-base-theme.gbif-staging.org/
-  - text: Other sites using the theme
-    href: https://github.com/gbif/?q=hp-&type=all&language=&sort=
-  - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
-  - text: "Docs" # Title for block of menu items
-  - text: Jekyll documentation
-    href: https://jekyllrb.com/docs/pages/
-  - text: Markdown tutorial
-    href: https://guides.github.com/features/mastering-markdown/
-  - text: YAML tutorial
-    href: https://dev.to/paulasantamaria/introduction-to-yaml-125f
-- text: News
-  href: /news/
+  - text: Guía de publicación
+    href: /resources/publishing-guide
+  - text: Protocolos
+    href: /resources/protocols
+  - text: Estándares
+    href: /resources/standards
+  - text: Calidad de datos
+    href: /resources/data-quality
+  - text: Acceso por API
+    href: /resources/api-access
+- text: Acerca de
+  menu: # Dropdown menu (one level deep only)
+  - text: El observatorio
+    href: /about/the-observatory
+  - text: Reconocimiento
+    href: /about/recognition
+  - text: Guía de citación
+    href: /about/citation-guide
+  - text: Términos de uso y privacidad
+    href: /about/terms-of-use-and-privacy
