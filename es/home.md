@@ -16,7 +16,7 @@ description: |
 
       <!-- Tab content -->
       <div id="searchTab_name" class="tabcontent" style="display: block;">
-        <form action="/specimen/search" method="GET">
+        <form action="/occurrence/search" method="GET">
           <input id="home_specimen_input" name="q" class="input" type="text" placeholder="Busca por texto" style="width: 100%;">
           <button type="submit" class="button is-ghost" aria-label="Buscar">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@ description: |
       </div>
 
       <div id="searchTab_basin" class="tabcontent">
-        <form action="/specimen/search" method="GET">
+        <form action="/occurrence/search" method="GET">
           <input id="basin" name="basin" class="input" type="text" placeholder="Busca por cuenca" style="width: 100%;">
           <button type="submit" class="button is-ghost" aria-label="submit the search query">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ description: |
       </div>
 
       <div id="searchTab_scientificName" class="tabcontent">
-        <form action="/specimen/search" method="GET">
+        <form action="/occurrence/search" method="GET">
           <input id="verbatimScientificName" name="verbatimScientificName" class="input" type="text" placeholder="Busca por nombre científico" style="width: 100%;">
           <button type="submit" class="button is-ghost" aria-label="submit the search query" >
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@ description: |
       </div>
 
         <div id="searchTab_publisher" class="tabcontent">
-        <form action="/specimen/search" method="GET">
+        <form action="/occurrence/search" method="GET">
           <input id="publisher" name="pubisher" class="input" type="text" placeholder="Busca por publicador" style="width: 100%;">
           <button type="submit" class="button is-ghost" aria-label="submit the search query" >
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@ description: |
   <p class="orSeperator">O</p>
   <div>
     <div class="heroButton">
-        <a href="/specimen/search">Explora todos los registros</a>
+        <a href="/occurrence/search">Explora todos los registros</a>
     </div>
   </div>
   <script>
