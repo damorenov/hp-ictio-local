@@ -1,0 +1,43 @@
+stats:
+  features:
+    - title: 164000
+      description: Observaciones validadas de peces
+      background: assets/images/icons/registers.png
+      href: /occurrence/search
+      blankTarget: false
+    - title: 34
+      description: Socios publicadores
+      background: assets/images/s/ocurrences.png
+      href: /occurrence/search?hasCoordinate=true
+      blankTarget: false
+    - title: 120
+      description: Especies registradas
+      background: assets/images/icons/datasets.png
+      href: /dataset/search
+      blankTarget: false
+    - title: 153
+      description: Subcuentas con registros
+      background: assets/images/icons/publishers.png
+      href: /dataset/search
+      blankTarget: false
+    - title: 77%
+      description: Coberturas de subcuencas de cuarto nivel
+      background: assets/images/icons/collections.png
+      href: /collection/search
+      blankTarget: false
+buttons:
+  description: >
+    [El observatorio](https://aguasamazonicas.org){:.button .target-blank}
+    [información disponible](https://aguasamazonicas.org){:.button .target-blank}
+    [Socios](https://aguasamazonicas.org){:.button .target-blank}
+welcome:
+  reverse: true
+  title: Descubre la vida de los ríos
+  description: |
+      Conoce algunas de las especies que habitan en los ríos amazónicos.
+  background: assets/images/icons/registers.png
+  imageLicense: |
+    CC BY 4.0 - Aguas Amazónicas. 2026. Via Observatorio Aguas Amazónicas.
+  cta: 
+    - text: Más información
+      href: /resources/publisher-registry
