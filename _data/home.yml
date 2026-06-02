@@ -27,17 +27,17 @@ stats:
       blankTarget: false
 buttons:
   description: >
-    [El observatorio](https://aguasamazonicas.org){:.button .target-blank}
-    [información disponible](https://aguasamazonicas.org){:.button .target-blank}
-    [Socios](https://aguasamazonicas.org){:.button .target-blank}
+    [El observatorio](about/the-observatory){:.button .target-blank}
+    [información disponible](occurrence/search){:.button .target-blank}
+    [Socios](about/the-observatory){:.button .target-blank}
 welcome:
   reverse: true
   title: Descubre la vida de los ríos
   description: |
       Conoce algunas de las especies que habitan en los ríos amazónicos.
-  background: assets/images/icons/registers.png
+  background: https://aguasamazonicas.org/wp-content/uploads/2026/03/portada-web.jpg
   imageLicense: |
     CC BY 4.0 - Aguas Amazónicas. 2026. Via Observatorio Aguas Amazónicas.
   cta: 
     - text: Más información
-      href: /resources/publisher-registry
+      href: /resources/protocols

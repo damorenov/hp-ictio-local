@@ -4,6 +4,7 @@ lang-ref: home
 layout: home
 description: |
   <p class="feature-title">Observatorio Aguas Amazónicas</p>
+  <p class="feature-description">Datos para entender la vida de los ríos amazónicos</p>
 
   <div class="searchWrapper">
       <!-- Tab links -->
@@ -93,7 +94,7 @@ description: |
         evt.currentTarget.className += " active";
       }
   </script>
-background: /assets/images/placeholders/templates/w1600h800.png
+background: https://aguasamazonicas.org/wp-content/uploads/2025/11/banner-home-page.png
 imageLicense: None for this image
 height: 100vh
 permalink: /
