@@ -1,19 +1,15 @@
 $primary-color: #006ba6;
 $secondary-color: #c2bcbc;
 $button-color: #6b6767;
+$white-color: #ffffff;
+$text-color: #363636;
+$light-gray-color: #ececec;
+$placeholder-color: #9a9a9a;
+$search-glass-bg: rgba(255, 255, 255, 0.52);
+$search-glass-border: rgba(255, 255, 255, 0.45);
+$search-glass-shadow: rgba(0, 0, 0, 0.08);
 
 @import "theme/_main";
-
-// navbar styles
-// .navbar {
-//     background: none;
-//     position: sticky;
-//     top: 0;
-//     margin: auto;
-//     background-size: cover;
-//     background-image: linear-gradient(90deg, rgba(54,199,152,0.9) 0%, rgba(0,12,100,0.9) 100%);
-// }
-
 // statistics styles
     .statistics {
       overflow: visible;
@@ -23,13 +19,13 @@ $button-color: #6b6767;
         font-size: 3.0rem;
         font-weight: 500;
         margin-bottom: 2rem;
-        color: #ffffff;
+        color: $white-color;
 
       }
       .feature-description {
         font-size: 1.2rem;
         font-weight: 100;
-        color: #ffffff;
+        color: $white-color;
       }
     }
 
@@ -40,34 +36,92 @@ $button-color: #6b6767;
     .footer-column-name{
         font-size: 1.5rem;
         font-weight: 500;
-        color: #ffffff;
+        color: $white-color;
     }
 
     .footer-description{
         font-size: 1.2rem;
         font-weight: 100;
-        color: #ffffff;
+        color: $white-color;
     }
 
 }
 
 // Floating Hero styles
 .floatingHero {
-    .feature-title {
-        font-size: 2.2rem;
+    padding-bottom: 72px;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 72px;
+        background-color: $white-color;
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 72' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M0 36C360 72 720 0 1080 36 1260 54 1380 18 1440 36V72H0Z'/%3E%3C/svg%3E");
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        mask-position: bottom center;
+        pointer-events: none;
+        z-index: 2;
     }
+
+    .feature-content {
+        text-align: left;
+        margin-left: 100px;
+    }
+
     .feature-description {
-        color: #ffffff;
-        a {
-            text-decoration: none;
+        width: auto;
+        max-width: 750px;
+        margin-left: 0;
+        margin-right: auto;
+        padding: 0 32px;
+        text-align: left;
+
+        > .feature-title,
+        > .hero-subtitle {
+            color: $white-color;
         }
+
+        a.heroSearchCta {
+            color: $white-color;
+            text-decoration: none;
+
+            &:hover,
+            &:focus,
+            &:visited,
+            &:active {
+                color: $white-color;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .feature-title {
+        font-size: 2.75rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.35rem;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    + .textBanner {
+        background-color: $white-color;
     }
 }
 
 // Buttons styles
 .button {
     background-color: $button-color;
-    color: #ffffff;
+    color: $white-color;
     padding: 1rem 2rem;
     border-radius: 2rem;
     text-decoration: none;
@@ -75,84 +129,136 @@ $button-color: #6b6767;
 }
 
 // Search box styles
+.heroSearchBlock {
+    margin-top: 1.5rem;
+}
+
+.searchWrapper {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: $search-glass-bg;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid $search-glass-border;
+    box-shadow: 0 8px 32px $search-glass-shadow;
+    color: $text-color;
+}
+
 .tab {
     display: flex;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    padding: 0.5rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.5rem;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    flex: 1 1 auto;
-    background-color: #f1f1f1;;
-    float: left;
+    background: transparent;
+    padding: 0;
+    overflow: visible;
+}
+
+.tab button {
+    flex: 0 1 auto;
+    background-color: $white-color;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    font-weight: bold;
-    color: darkgray;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: $secondary-color;
+    padding: 0.65rem 1.25rem;
     border-radius: 2rem;
-    color: #ffffff;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: $button-color;
+}
+
+.tab button:hover:not(.active) {
+    background-color: $light-gray-color;
+    color: $button-color;
+}
+
+.tab button.active {
     background-color: $button-color;
-    border-radius: 2rem;
-    color: #ffffff;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
+    color: $white-color;
+}
+
+.tabcontent {
     display: none;
-    background: white;
-    padding: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    form {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 0.5rem;
-      input {
-        margin-right: 1px;
-        flex: 1 1 auto;
-        padding: 24px 16px;
-        border: none;
-        color: black;
-      }
-      button {
-        flex: 0 0 auto;
-        border: none;
-      }
+    padding: 1rem 0 0;
+
+    &.is-active {
+        display: block;
     }
-  }
-  
-  .orSeperator {
-    font-size: 24px;
-    padding-top: 20px;
-  }
-  
-  .heroButton {
-    background-color: #ffffff;
-    border: none;
-    border-radius: 3px;
-    font-size: 14px;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        background: $white-color;
+        border-radius: 3rem;
+        padding: 0.35rem 0.35rem 0.35rem 1.25rem;
+    }
+
+    .searchInput {
+        flex: 1 1 auto;
+        margin: 0;
+        padding: 0.85rem 0.5rem;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        color: $text-color;
+
+        &:focus,
+        &:hover {
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: $placeholder-color;
+        }
+    }
+
+    .searchSubmit {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background-color: $button-color;
+        color: $white-color;
+        cursor: pointer;
+
+        svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+}
+
+.heroSearchActions {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+}
+
+.heroSearchCta {
     display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    background-color: $primary-color;
+    color: $white-color;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+        filter: brightness(1.08);
+        color: $white-color;
+        text-decoration: none;
+        background-color: $primary-color;
+    }
+}

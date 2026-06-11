@@ -25,11 +25,13 @@ stats:
       background: assets/images/icons/collections.png
       href: /collection/search
       blankTarget: false
-buttons:
+bannerText:
+  align: right
   description: >
-    [El observatorio](about/the-observatory){:.button .target-blank}
-    [información disponible](occurrence/search){:.button .target-blank}
-    [Socios](about/the-observatory){:.button .target-blank}
+    La plataforma de la Alianza Aguas Amazónicas para organizar, compartir y facilitar el acceso a información sobre los ríos y ecosistemas amazónicos.
+    <br>
+    [Más información](about/the-observatory){:.button .target-blank}
+  background: https://aguasamazonicas.org/wp-content/uploads/2026/03/portada-web.jpg
 welcome:
   reverse: true
   title: Descubre la vida de los ríos
