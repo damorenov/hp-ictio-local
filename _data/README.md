@@ -1,5 +1,5 @@
 # Data
-The `_data` folder is where you can provided structured data as json or yaml to configure the various sectiona and components of your website.
+The `_data` folder is where you can provided structured data as json or yaml to configure the various sections and components of your website.
 
 ## Footer
 `_data/footer.yml` unless you have overwritten the footer in `_includes/customFooter.html` then you can configure it here. If you have a multilingual site, then you should create a footer for each language following the convention of a new folder per not default language. E.g. `_data/es/footer.yml` for spanish version. The code needs to match your definition in `_data/languages.yml`

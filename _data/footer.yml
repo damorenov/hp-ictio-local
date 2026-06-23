@@ -14,14 +14,19 @@ columns:
       * [info@aguasamazonicas.org](mailto:info@aguasamazonicas.org)
       * Calle Chiclayo 1008 Miraflores
       * Lima - Perú
-      * +51 (01) 447 1370
-    connectIcons: false # Show social icons (defined in _config.yml)
+
+  - name: Idioma
+    description: | # Can be Markdown
+      * [Español](/es)
+      * [Portugués](/pt)
+      * [Inglés](/en)
 
   - name: Licencia de contenido    
     description: | # Can be Markdown
       * [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
       * (Salvo que se indique lo contrario)
       * [Ir a la web de la Alianza](https://aguasamazonicas.org){:.button .target-blank}
+    connectIcons: false # Show social icons (defined in _config.yml)
 
 
   # EXAMPLE - just leave this commented out at the bottom of the file for future reference
