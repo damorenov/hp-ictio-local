@@ -6,16 +6,22 @@
   menu: # Dropdown menu (one level deep only)
   - text: Registros
     href: /occurrence/search
+  - text: Fichas de taxones
+    href: /occurrence/search
+  - text: Mapa cuenca
+    href: /occurrence/search
+  - text: Panel dinámico
+    href: /occurrence/search  
   - text: Conjuntos de datos
-    href: /dataset/search
-  - text: Literatura
-    href: /literature/search
+    href: /occurrence/search  
 - text: Recursos
   menu: # Dropdown menu (one level deep only)
-  - text: Guía de uso del Observatorio
+  - text: Guía de uso
     href: /resources/use-guide
-  - text: Guía de publicación (IPT)
+  - text: Guía de publicación
     href: /resources/publishing-guide
+  - text: Informes ICTIO
+    href: /resources/ict-reports
   - text: Protocolos
     href: /resources/protocols
   - text: Estándares
@@ -26,11 +32,17 @@
     href: /resources/api-access
 - text: Acerca de
   menu: # Dropdown menu (one level deep only)
-  - text: El observatorio
+  - text: El Observatorio
     href: /about/the-observatory
-  - text: Reconocimiento
-    href: /about/recognition
-  - text: Guía de citación
+  - text: Gobernanza
+    href: /about/governance
+  - text: Citación
     href: /about/citation-guide
-  - text: Términos de uso y privacidad
+  - text: Uso de los datos
+    href: /about/use-guidelines
+  - text: Privacidad
+    href: /about/privacy-policy
+  - text: Agradecimiento
+    href: /about/acknowledgements
+  - text: Ayuda
     href: /about/terms-of-use-and-privacy

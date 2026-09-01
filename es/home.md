@@ -89,8 +89,6 @@ height: 100vh
 permalink: /
 composition:
   - type: heroImage
-  - data: home.bannerText
-    type: product
   - data: home.stats
     type: stats
   - data: home.welcome

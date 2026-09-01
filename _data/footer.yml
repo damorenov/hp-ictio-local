@@ -12,8 +12,6 @@ columns:
     description: | # Can be Markdown
       * Alianza Aguas Amazónicas
       * [info@aguasamazonicas.org](mailto:info@aguasamazonicas.org)
-      * Calle Chiclayo 1008 Miraflores
-      * Lima - Perú
 
   - name: Idioma
     description: | # Can be Markdown
@@ -25,7 +23,7 @@ columns:
     description: | # Can be Markdown
       * [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
       * (Salvo que se indique lo contrario)
-      * [Ir a la web de la Alianza](https://aguasamazonicas.org){:.button .target-blank}
+      * [Ir a la web de la Alianza](https://aguasamazonicas.org){:.button .margin-top-30 target="_blank"}
     connectIcons: false # Show social icons (defined in _config.yml)
 
 

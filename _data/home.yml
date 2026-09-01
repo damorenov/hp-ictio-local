@@ -1,37 +1,36 @@
 stats:
+  title: 'Conoce el <span class="stats-highlight">monitoreo participativo</span> de peces amazónicos.'
+  lastUpdated: "30/07/2026"
+  cta:
+    - text: Más información
+      href: /resources/protocols
   features:
-    - title: 164000
+    - title: "164.000"
       description: Registros validados de peces
-      background: /assets/images/icons/registers.png
+      background: http://localhost:4000/assets/images/icons/stats_registries_icon.svg
       href: /occurrence/search
       blankTarget: false
-    - title: 34
-      description: Socios publicadores
-      background: /assets/images/s/ocurrences.png
+    - title: '<span class="stat-title-compound">34 | +730</span>'
+      description: '<span class="stat-desc-compound">Organizaciones | Ciudadanos científicos publicadores</span>'
+      background: http://localhost:4000/assets/images/icons/stats_publishers_icon.svg
       href: /occurrence/search?hasCoordinate=true
       blankTarget: false
-    - title: 120
+    - title: "+120"
       description: Especies registradas
-      background: /assets/images/icons/datasets.png
+      background: http://localhost:4000/assets/images/icons/stats_species_icon.svg
       href: /dataset/search
       blankTarget: false
     - title: 153
       description: Subcuentas con registros
-      background: /assets/images/icons/publishers.png
+      background: http://localhost:4000/assets/images/icons/stats_basins_icon.svg
       href: /dataset/search
       blankTarget: false
     - title: 77%
       description: Coberturas de subcuencas
-      background: /assets/images/icons/collections.png
+      background: http://localhost:4000/assets/images/icons/stats_basinlevel_icon.svg
       href: /collection/search
       blankTarget: false
-bannerText:
-  align: right
-  description: >
-    La plataforma de la Alianza Aguas Amazónicas para organizar, compartir y facilitar el acceso a la información sobre los ecosistemas acuáticos de la Cuenca Amazónica
-    <br>
-    [Más información](about/the-observatory){:.button .target-blank}
-  background: https://aguasamazonicas.org/wp-content/uploads/2026/03/portada-web.jpg
+
 welcome:
   reverse: false
   title: Descubre la vida de los ríos
