@@ -150,7 +150,7 @@ $wave-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
         }
       }
 
-      // Indicador compuesto (34 | +730): una línea sin afectar el resto
+      // stat compuesto de organizaciones y ciudadanos científicos publicadores: una línea sin afectar el resto
       .statistic:has(.stat-title-compound) {
         flex: 0 0 260px;
       }
@@ -282,6 +282,18 @@ $wave-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
     + .textBanner {
         background-color: $white-color;
     }
+
+    @media (max-width: 620px) {
+        .feature-content {
+            margin-left: 0;
+        }
+
+        .feature-description {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            max-width: none;
+        }
+    }
 }
 
 // Buttons styles
@@ -316,7 +328,7 @@ $wave-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
 
 .tab {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 0.5rem;
     background: transparent;
@@ -325,7 +337,7 @@ $wave-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
 }
 
 .tab button {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     background-color: $white-color;
     border: none;
     outline: none;
@@ -335,6 +347,7 @@ $wave-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
     font-weight: 600;
     font-size: 0.9rem;
     color: $button-color;
+    white-space: nowrap;
 }
 
 .tab button:hover:not(.active) {
@@ -433,11 +446,185 @@ $wave-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
     }
 }
 
+@media (max-width: 620px) {
+    .tab {
+        flex-wrap: wrap;
+
+        button {
+            flex: 1 1 100%;
+            width: auto !important;
+        }
+    }
+
+    .heroSearchActions {
+        justify-content: center;
+    }
+}
+
 .product .feature-img {
     background-color: $white-color;
 }
 
 section.features, section.splitBanner, section.product, section.textBanner
- {
+{
     border-bottom: none;
+}
+
+// Sección "Explora los datos" en home
+.features--explore {
+    background: $white-color;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    margin-bottom: 2rem;
+
+    .features-intro {
+        max-width: 52rem;
+        padding-bottom: 2.5rem;
+
+        .feature-title {
+            color: $primary-color;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+        .feature-description {
+            color: $text-color;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 1rem;
+        }
+    }
+
+    .feature-cards {
+        max-width: 1152px;
+        gap: 2rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        align-items: stretch;
+    }
+
+    .feature {
+        flex: 1 1 260px;
+        max-width: 340px;
+        margin: 0;
+        overflow: visible;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .feature .feature-img {
+        flex: 0 0 160px;
+        height: 160px;
+        width: 100%;
+        padding-bottom: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        margin-bottom: 1rem;
+    }
+
+    .feature .feature-img img {
+        position: static;
+        width: auto;
+        height: auto;
+        max-width: 180px;
+        max-height: 150px;
+        object-fit: contain;
+    }
+
+    .feature .feature-content {
+        flex: 1 1 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .feature .feature-text {
+        flex: 0 0 auto;
+        width: 100%;
+        min-height: 3.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .feature .feature-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        width: 100%;
+        margin: 0;
+
+        a {
+            color: $text-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .feature .feature-description {
+        flex: 1 1 auto;
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 0.75rem 0 0;
+    }
+
+    .feature .feature-cta {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-top: 1.25rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature .feature-cta .button.is-primary {
+        border-radius: 2rem;
+        padding: 0.65rem 1.5rem;
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+
+    @media screen and (min-width: 774px) {
+        .feature-cards .feature {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 260px;
+
+            > .feature-img {
+                flex: 0 0 160px;
+                max-height: none;
+                height: 160px;
+                border: none;
+            }
+
+            > .feature-content {
+                flex: 1 1 auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 773px) {
+        .feature {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
 }
